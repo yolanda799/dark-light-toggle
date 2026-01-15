@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+
+.btnDark {
+    display: flex;
+    border-radius: 50px;  
+    overflow: hidden;      
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.botaoDark, .botaoLight {
+    border: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 30px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.botaoDark {
+    color: black;
+    background: violet;
+    border-radius: 50px 0 0 50px; 
+}
+
+
+.botaoLight {
+    color: white;
+    background: rgb(63,3,63);
+    border-radius: 0 50px 50px 0; 
+}
+
+.botaoDark:hover {
+    background: rgb(77, 3, 77);
+    transform: scale(1.1);
+}
+
+.botaoLight:hover {
+    background: rgb(137, 2, 137);
+    transform: scale(1.1);
+}
